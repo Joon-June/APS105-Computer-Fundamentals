@@ -412,7 +412,7 @@ double minimax(char board[][26], int depth, double alpha, double beta, bool maxi
 	if(depth == 0)	return evalBoard(board);
 
 	if (maximizingPlayer == true){
-		double nodeValue= -DBL_MAX; //represents -¢®A
+		double nodeValue= -DBL_MAX; //represents -Â¢Â®A
 			char row; for(row = 'a'; row < 'a' + n; row++){ //For all children branches
 				char col; for(col = 'a'; col <'a' + n; col++){
 					if(	isPosLegal(board, row, col, compColour) ){
@@ -456,7 +456,7 @@ double minimax(char board[][26], int depth, double alpha, double beta, bool maxi
 			return nodeValue;
 	}
 	else{//minimizingPlayer's turn (opponent)
-		double nodeValue= DBL_MAX; //represents +¢®A
+		double nodeValue= DBL_MAX; //represents +Â¢Â®A
 		
 		char row; for(row = 'a'; row < 'a' + n; row++){ //For all children branches
 			char col; for(col = 'a'; col <'a' + n; col++){
