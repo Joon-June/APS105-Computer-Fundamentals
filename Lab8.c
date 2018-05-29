@@ -4,7 +4,6 @@
 // using a linked list to hold the songs in the library.
 //
 // Author: Joonsu Oh
-// Student Number: 1003482297
 //
 
 #include <stdio.h>
