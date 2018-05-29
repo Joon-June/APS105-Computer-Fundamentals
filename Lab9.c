@@ -7,7 +7,6 @@
 // The sorting algorithm is Cocktail Sort.
 //
 // Author: Joonsu Oh
-// Student Number: 1003482297
 //
 
 #include <stdio.h>
