@@ -14,44 +14,25 @@ int numTurns=0;
 char highestRow, highestCol;
 
 void initializeBoard();
-
 void printBoard();
-
 char oppColour(char colour);
-
 bool isUorColour(char position, char colour);
-
 bool areColAndRow0(int deltaRow, int deltaCol);
-
 bool positionInBounds(char row, char col);
-
 bool checkLegalInDirection(char board[][26], char row, char col, char colour, int deltaRow, int deltaCol);
-
 void moveAndFlip(char board[][26], char row, char col, char colour);
-
 bool isPosLegal(char board[][26], char row, char col, char colour);
-
-
 bool moveAvail(char board[][26], char colour);
-
 char figureOutWinner();
-
 int flipCount(char board[][26], char row, char col, char colour);
-
 double cornerWeight();
-
 double flippingWeight();
-
 double forfeitScore(char board[][26]);
-
 double evalBoard(char board[][26]);
-
 double minimax(char board[][26], int depth, double alpha, double beta, bool maximizingPlayer, int flag);
-
 void computerMove(char board[][26]);
 
 /*End of Functions*/
-
 
 int main(){
 	double totalTime = 0.0;
